@@ -25,5 +25,5 @@ list1.append(y)
 list1.append(z)
 print("My List is : ", list1)
 
-y = list1
-print("All Addition is : ", digitprogram2(y))
+b = list1
+print("All Addition is : ", digitprogram2(b))
