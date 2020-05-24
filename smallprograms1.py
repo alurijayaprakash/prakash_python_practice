@@ -21,6 +21,10 @@ print("Here 3rd Character is",x[2])
 x = "MSIT"
 print(x[2:])
 
+# Print “MSIT” in reverse order
+x = "MSIT"
+print(x[::-1])
+
 # Print "INDIA" in reverse order from the string “MSITHYDINDIA”
 x = "MSITHYDINDIA"
 print(x[-1:-6:-1])
