@@ -12,7 +12,7 @@ def digitprogram2(a):
             print("Sum is : ", sum)
             j = j // 10
             print("2nd J :", j)
-            print("Loop END Loop.................")
+            print("Loop ENDED.................")
     return sum
 
 
