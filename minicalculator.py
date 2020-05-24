@@ -1,3 +1,5 @@
+#Design Small Calculator for any 2 numbers , calculator can perform addition, subtraction, multiplication, division , must be take input from user
+
 a=int(input("Hello This is Small Calculator, It's Working for any 2 numbrers only, \n Here 4 Operations Available \n 1.Addition \n 2.Subtraction \n 3.Division \n 4.Multiplication \n According your need please enter Operation Number corrosponding number to go further \n Please Enter Your Selection Here : "))
 
 if a==1:
