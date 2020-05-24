@@ -73,3 +73,76 @@ def myfunc():
 
 myfunc()
 print("Global Variable Replaced with in Function, then use globally Here : " + x)
+
+
+# Using replace() module replace char from string
+a = "Hello Prakash"
+print(a.replace("Hello", "Hi"))
+print(a.replace("H", "h"))
+
+# Using replace() module replace int digit from integer
+# Hint : we can't replace int , so type cast then replace.
+a = 34
+b = str(34)
+c=b.replace('3','5')
+print(int(c))
+print(type(int(c)))
+
+# Using split() function split two strings based on a separator
+# Observations : finally we will get output list which contain those two substrings
+# we can't use "\"
+x = "Hello,Prakash"
+print(x.split(","))
+
+# In List, Here the process of replacing a List item
+a = ['Hello Prakash', (2+3j), 2, 5.6]
+print("Actual List is :",a)
+a[1] = 6
+a[2] = "USA"
+print("1st Time Replacement :",a)
+a[0:2] = ['55', 67]
+print("2nd Time Replacement:",a)
+
+#Create list with three students, then check student name is present in that list or not, ask input from user
+x = input("Enter Name - 'kiran' or 'raju' or 'mani' : ")
+a = ['kiran', 'raju' , 'mani']
+if x in a:
+    print ("Yahoo...! your name is here")
+else:
+    print("Sorry name is not available in my list")
+
+# Add items to list by using append() method , this will add item at end of list
+list1 = ["Apple", "Banana", "cherry"]
+list1.append("grape")
+print("Here New List", list1)
+
+# Add/Insert Element at specified position in that list by using insert() Method
+list2 = ["Dell", "HP", "Apple", "Acer"]
+list2.insert(1, "Sony")
+print(list2)
+
+# Remove element in that list by using remove() method
+# Observations : in insert() we are using that by index position , but here direct string
+# Hint : in order to remove element by using index , we can use pop() method
+list3 = ["First", "Second", "Third", "Fourth"]
+list3.remove("First")
+print(list3)
+
+# Remove element by using pop() method
+# by default pop() method removes last element , but if we specify index , this will remove that element only
+x = ["ear", "nose", "eyes", "skin", "finger"]
+x.pop(2)
+print(x)
+
+
+"""
+remove() vs pop() vs del perform similar operations , 
+but
+# Help : https://stackoverflow.com/questions/11520492/difference-between-del-remove-and-pop-on-lists
+# Help : https://www.csestack.org/difference-between-remove-del-pop-python-list/
+==> remove()   delete the matching element/object whereas del and pop removes the element at a specific index. 
+==> del and pop deals with the index. 
+==> The only difference between two is that- pop return deleted the value from the list and del does not return anything.
+==> Pop is only way that returns the object.
+==> Remove is the only one that searches object (not index).
+"""
