@@ -150,3 +150,23 @@ but
 ==> Pop is only way that returns the object.
 ==> Remove is the only one that searches object (not index).
 """
+
+
+# Check given number is prime number or not
+def  prime2(num):
+  if num > 1:
+    for i in range(2,num//2+1): # here we can use range(2,num) , num//2+1 will reduce computing time
+      if (num % i) == 0:
+        return "It's not prime number"
+    else:
+      return "it's Prime Number"
+  else :
+    return "It's not Prime Number"
+
+x = int(input("i can check entered number is prime or not\n Enter your number :  "))
+print(prime2(x))
+
+
+
+
+#print prime numbers in specific range
