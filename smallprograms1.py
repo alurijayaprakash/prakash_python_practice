@@ -217,4 +217,19 @@ for a in range(x):
     print(" ")
     
 
-#change-11
+#  Given a two list of numbers create a new list such that new list should contain only odd numbers from the first list and even numbers from the second list
+list1 = [10, 20, 23, 11, 17]
+list2 = [13, 43, 24, 36, 12]
+def oddeven(list1,list2):
+    list3 = []
+    for i in list1:
+        if i % 2 !=0:
+            list3.append(i)
+
+    for j in list2:
+        if j % 2 ==0:
+            list3.append(j)
+
+    return list3
+
+print(oddeven(list1,list2))
