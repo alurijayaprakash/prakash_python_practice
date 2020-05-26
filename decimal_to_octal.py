@@ -7,6 +7,7 @@ main part = leftpart + rightpart
 you need to call mainpart.
 for more details , please refer : https://www.youtube.com/watch?v=v0VSL1iRK_g
 or know decimal to octal conversion procedure
+online tool for cross reference : https://www.rapidtables.com/convert/number/decimal-to-octal.html
 '''
 def main1(x,f):
     # Main Program , x1 will load integer part, x2 will load fractional part of given number
