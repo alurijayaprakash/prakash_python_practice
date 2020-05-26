@@ -200,3 +200,18 @@ if x1 == y2:
     print("true")
 else:
     print("false")
+
+
+#Print the following pattern
+'''
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+'''
+x = 6
+for a in range(x):
+    for b in range(a):
+        print(a, end = " ")
+    print(" ")
