@@ -215,3 +215,6 @@ for a in range(x):
     for b in range(a):
         print(a, end = " ")
     print(" ")
+    
+#change-2 
+update-1
