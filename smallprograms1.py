@@ -62,7 +62,11 @@ else:
 
 
 # Usage of round() method
-# this will round off to next integer (+ve)
+'''
+in round() method
+3.1 ...3.4 will be 3
+3.5 ...3.9 will be 4
+'''
 print(round(3.5))
 print(round(11/2))
 
@@ -167,6 +171,7 @@ x = int(input("i can check entered number is prime or not\n Enter your number : 
 print(prime2(x))
 
 
-
+# Type Conversion or Type casating
+# SI Rule : String to integer or float not possible
 
 #print prime numbers in specific range

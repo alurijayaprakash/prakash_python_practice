@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../LocalPrakashPractice/.idea/PrakashPractice.iml" filepath="$PROJECT_DIR$/../LocalPrakashPractice/.idea/PrakashPractice.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/prakash_python_practice.iml" filepath="$PROJECT_DIR$/.idea/prakash_python_practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ztm-python-cheat-sheet/.idea/ztm-python-cheat-sheet.iml" filepath="$PROJECT_DIR$/../ztm-python-cheat-sheet/.idea/ztm-python-cheat-sheet.iml" />
     </modules>
   </component>
 </project>
