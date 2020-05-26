@@ -175,3 +175,28 @@ print(prime2(x))
 # SI Rule : String to integer or float not possible
 
 #print prime numbers in specific range
+# pending
+
+# Reverse a given number and return true if it is the same as the original number
+# Method - 1
+mainnum = 121
+num = mainnum
+revnum = 0
+while num > 0:
+    remainder = num % 10
+    revnum = (revnum * 10) + remainder
+    num = num // 10
+if mainnum == revnum:
+    print("true")
+else:
+    print("false")
+
+# Method - 2
+x = 121
+x1 = str(x)
+y1 = str(x)
+y2 = y1[::-1]
+if x1 == y2:
+    print("true")
+else:
+    print("false")
