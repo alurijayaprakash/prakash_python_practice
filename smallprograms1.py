@@ -233,3 +233,81 @@ def oddeven(list1,list2):
     return list3
 
 print(oddeven(list1,list2))
+
+
+# Print the following pattern
+'''
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+'''
+
+for i in range(1,6):
+    for j in range(1,i+1):
+        print(j, end =' ')
+    print(end = "\n")
+
+
+# Print the following pattern using for loop
+'''
+5 4 3 2 1 
+4 3 2 1 
+3 2 1 
+2 1 
+1
+'''
+
+for i in range(5,0,-1):
+    for j in range(i,0,-1):
+        print(j, end =' ')
+    print(end = "\n")
+
+
+
+#Reverse the following list using for loop
+#list1 = [10, 20, 30, 40, 50]
+#Method - 1
+
+list1 = [10, 20, 30, 40, 50]
+t = len(list1)-1
+while list1:
+    k = list1[t]
+    print(k)
+    if t == 0:
+        break
+    t = t-1
+
+#Method - 2
+
+list1 = [10, 20, 30, 40, 50]
+start = len(list1)-1
+stop = -1
+step = -1
+for val in range(start,stop,step):
+    print (list1[val])
+
+# -----------------------------
+
+# Below is the function displayStudent(name, age). Assign a new name showStudent(name, age)  to it and call through the new name
+'''
+# def displayStudent(name, age):
+#     print(name, age)
+# 
+# displayStudent("Emma", 26)
+# 
+# You should be able to call the same function using
+# 
+# showStudent(name, age)
+# 
+# '''
+def displayStudent(name, age):
+    print(name, age)
+
+displayStudent("Emma", 26)
+
+showStudent = displayStudent
+showStudent("Emma", 26)
+
+
