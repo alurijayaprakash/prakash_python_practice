@@ -1,16 +1,16 @@
-# https://www.hackerrank.com/challenges/words-score/problem?h_r=profile
-n = int(input())
-student_marks = {}
-for _ in range(n):
-    name, *line = input().split()
-    scores = list(map(float, line))
-    student_marks[name] = scores
-query_name = input()
-# print(student_marks)
-# print(query_name)
-for i in student_marks:
-    if i == query_name:
-        list1 = student_marks[i]
-        # print(list1)
-avg1 = sum(list1)/len(list1)
-print("{:.2f}".format(avg1))
+def is_vowel(letter):
+    return letter in ['a', 'e', 'i', 'o', 'u', 'y']
+
+def score_words(words):
+    score = 0
+    for word in words:
+        num_vowels = 0
+        for letter in word:
+            if is_vowel(letter):
+                num_vowels += 1
+        if num_vowels % 2 == 0:
+            score += 2
+        else:
+            score += 1
+    return score
+
