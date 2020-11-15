@@ -1,3 +1,5 @@
+# https://www.hackerrank.com/challenges/swap-case/problem
+
 # s1 = 'AZ'
 # print(ord(s1[0]))
 #
