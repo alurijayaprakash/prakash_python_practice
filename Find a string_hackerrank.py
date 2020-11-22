@@ -60,3 +60,18 @@ if __name__ == '__main__':
 
     count = count_substring(string, sub_string)
     print(count)
+
+
+#Method-4 - it's replica of method-3 by using list comprehension
+
+def count_substring(string, sub_string):
+    count = 0
+    return sum(1 for i in range(len(string)-len(sub_string)+1) if string.startswith(sub_string,i))
+
+
+if __name__ == '__main__':
+    string = input().strip()
+    sub_string = input().strip()
+
+    count = count_substring(string, sub_string)
+    print(count)
