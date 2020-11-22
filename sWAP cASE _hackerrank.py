@@ -46,3 +46,4 @@ def swap_case(s):
         else:
             s1 = s1 + s[i]
     return s1
+Prathyusha
